@@ -1,0 +1,110 @@
+*,:after ,:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(233, 47%, 7%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    Font-size: 15px
+}
+.container {
+    height:261px;
+    width:790px;
+    margin: 25% auto;
+    border-radius: 10px;
+    display: flex;
+    background-color: hsl(244, 38%, 16%)
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.card-content {
+    height: 100%;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+
+}
+.card-image {
+    height: 100%;
+    width: 50%;
+    position: relative;
+   
+
+}
+.card-image img {
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    object-fit: contain;
+    
+}
+span {
+    color: hsl(277, 64%, 61%);
+}
+ .card-content .state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:375px) {
+    body {
+        overflow:auto;
+
+    }
+   
+    .container {
+        height: 83vh;
+        width: 277px;
+        margin: 50px;
+        display: flex;
+        background-color: hsl(244, 38%, 16%);
+        flex-direction: column-reverse;
+        margin-left: 20px;
+    }
+    /* .card-image {
+        height: 100%;
+        width: 23%;
+        position: relative;
+    } 
+    .card-image img {
+        position: absolute;
+        height: 52%;
+        width: 435%;
+        object-fit: cover;
+    } */
+    .card-image {
+        height: 100%;
+        width: 50%;
+        position: relative;
+    }
+    .card-image img {
+        position: absolute;
+        height: 121%;
+        width: 199%;
+        object-fit: cover;
+    }
+    .card-content {
+        height: 299%;
+        width: 102%;
+        color: white;
+        display: inherit;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px;
+    }
+    .card-content .state {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+}
